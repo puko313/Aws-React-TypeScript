@@ -1,148 +1,45 @@
-Contribution: 2019-03-25 20:00
+# Create React App with AWS Amplify Auth using Typescript
 
-Contribution: 2019-03-27 20:00
+This repository is a refactor of https://github.com/aws-samples/create-react-app-auth-amplify using Typescript with some additional improvements like Amplify UI.
 
-Contribution: 2019-03-27 20:01
+This app implements new version of Amplify Authenticator from Amplify UI to provide a basic authentication flow for signing up and signing in users as well as protected client side routing using AWS Amplify.
 
-Contribution: 2019-03-27 20:02
+## Prerequisites
 
-Contribution: 2019-03-27 20:03
+You should have an AWS Account ready to use and Node, npm and Amplify CLI installed. For more information, https://docs.amplify.aws/cli/start/install
 
-Contribution: 2019-03-27 20:04
+## Deploy with the AWS Amplify Console
 
-Contribution: 2019-03-29 20:00
+The AWS Amplify Console provides hosting for fullstack serverless web apps. Deploy this app to your AWS account with a single click:
 
-Contribution: 2019-03-29 20:01
+[![amplifybutton](https://oneclick.amplifyapp.com/button.svg)](https://console.aws.amazon.com/amplify/home#/deploy?repo=https://github.com/aws-samples/create-react-app-amplify-auth-typescript)
 
-Contribution: 2019-03-29 20:02
+The Amplify Console will fork this repo in your GitHub account, and then build and deploy your backend and frontend in a single workflow. Your app will be available at `https://main.appid.amplifyapp.com`.
 
-Contribution: 2019-03-29 20:03
+## Preview
 
-Contribution: 2019-03-29 20:04
+<img src="assets/create-account.png" width="600"/>
+<img src="assets/signin.png" width="600"/>
+<img src="assets/home.png" width="600"/>
 
-Contribution: 2019-04-01 20:00
+## Run locally with the Amplify CLI
 
-Contribution: 2019-04-01 20:01
+1. Fork the repo in your account and then clone it as below.
 
-Contribution: 2019-04-02 20:00
+```
+git clone https://github.com/devsmith-pro/aws-react-typescript.git
+cd aws-react-typescript
+yarn install
+```
 
-Contribution: 2019-04-02 20:01
+2. Pull backend from AWS Amplify using appid and envname which can be found on AWS Amplify UI.
 
-Contribution: 2019-04-03 20:00
+```
+amplify pull --appId appid --envName envname
+```
 
-Contribution: 2019-04-03 20:01
+3. Run locally
 
-Contribution: 2019-04-03 20:02
-
-Contribution: 2019-04-08 20:00
-
-Contribution: 2019-04-08 20:01
-
-Contribution: 2019-04-08 20:02
-
-Contribution: 2019-04-09 20:00
-
-Contribution: 2019-04-09 20:01
-
-Contribution: 2019-04-09 20:02
-
-Contribution: 2019-04-09 20:03
-
-Contribution: 2019-04-09 20:04
-
-Contribution: 2019-04-10 20:00
-
-Contribution: 2019-04-11 20:00
-
-Contribution: 2019-04-11 20:01
-
-Contribution: 2019-04-18 20:00
-
-Contribution: 2019-04-18 20:01
-
-Contribution: 2019-04-18 20:02
-
-Contribution: 2019-04-29 20:00
-
-Contribution: 2019-04-29 20:01
-
-Contribution: 2019-04-29 20:02
-
-Contribution: 2019-04-30 20:00
-
-Contribution: 2019-04-30 20:01
-
-Contribution: 2019-04-30 20:02
-
-Contribution: 2019-05-01 20:00
-
-Contribution: 2019-05-02 20:00
-
-Contribution: 2019-05-02 20:01
-
-Contribution: 2019-05-03 20:00
-
-Contribution: 2019-05-03 20:01
-
-Contribution: 2019-05-07 20:00
-
-Contribution: 2019-05-07 20:01
-
-Contribution: 2019-05-08 20:00
-
-Contribution: 2019-05-08 20:01
-
-Contribution: 2019-05-08 20:02
-
-Contribution: 2019-05-08 20:03
-
-Contribution: 2019-05-08 20:04
-
-Contribution: 2019-05-09 20:00
-
-Contribution: 2019-05-13 20:00
-
-Contribution: 2019-05-13 20:01
-
-Contribution: 2019-05-13 20:02
-
-Contribution: 2019-05-14 20:00
-
-Contribution: 2019-05-15 20:00
-
-Contribution: 2019-05-15 20:01
-
-Contribution: 2019-05-15 20:02
-
-Contribution: 2019-05-15 20:03
-
-Contribution: 2019-05-16 20:00
-
-Contribution: 2019-05-16 20:01
-
-Contribution: 2019-05-16 20:02
-
-Contribution: 2019-05-16 20:03
-
-Contribution: 2019-05-16 20:04
-
-Contribution: 2019-05-20 20:00
-
-Contribution: 2019-05-20 20:01
-
-Contribution: 2019-05-21 20:00
-
-Contribution: 2019-05-22 20:00
-
-Contribution: 2019-05-22 20:01
-
-Contribution: 2019-05-22 20:02
-
-Contribution: 2019-05-24 20:00
-
-Contribution: 2019-05-24 20:01
-
-Contribution: 2019-05-27 20:00
-
-Contribution: 2019-05-27 20:01
-
+```
+yarn start
+```
